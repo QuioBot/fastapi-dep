@@ -26,6 +26,6 @@ RUN apt-get remove -y --purge make gcc build-essential \
 RUN chmod +x entrypoint.sh
 
 
-RUN python app/src/bin/download_model
+RUN python src/bin/download_model
 
 CMD [ "./entrypoint.sh" ]
