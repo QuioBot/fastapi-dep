@@ -1,4 +1,4 @@
-from app.gpt_model import gpt2_tokenizer
+from gpt_model import gpt2_tokenizer
 import faiss
 import numpy as np
 import pandas as pd

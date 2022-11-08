@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 
-from app.src.predict import final_func_1
+from src.predict import final_func_1
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
