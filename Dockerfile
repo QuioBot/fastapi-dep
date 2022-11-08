@@ -3,6 +3,10 @@ FROM python:3.8-slim
 COPY . /app
 WORKDIR /app
 
+RUN pip install gdown
+
+RUN python src/bin/download_model
+
 RUN apt-get update && \
     apt-get install -y \
     build-essential \
@@ -17,9 +21,6 @@ RUN python3 -m venv /opt/venv
 # Install requirments to new virtual environment
 RUN /opt/venv/bin/pip install -r requirements.txt
 
-RUN pip install gdown
-
-RUN python src/bin/download_model
 
 # purge unused
 RUN apt-get remove -y --purge make gcc build-essential \
