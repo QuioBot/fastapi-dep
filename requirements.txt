@@ -3,13 +3,13 @@ gunicorn
 requests
 pytest
 pre-commit
-# gdown
+gdown
 fastapi
 uvicorn
 # faiss
-# faiss-cpu
-# tensorflow
-# transformers
-# keras
-# numpy
-# pandas
+faiss-cpu
+tensorflow
+transformers
+keras
+numpy
+pandas
