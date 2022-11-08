@@ -7,9 +7,9 @@ pre-commit
 fastapi
 uvicorn
 # faiss
-faiss-cpu
-tensorflow
-transformers
-keras
-numpy
-pandas
+# faiss-cpu
+# tensorflow
+# transformers
+# keras
+# numpy
+# pandas
