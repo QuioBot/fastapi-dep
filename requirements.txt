@@ -3,7 +3,7 @@ gunicorn
 requests
 pytest
 pre-commit
-gdown
+# gdown
 fastapi
 uvicorn
 # faiss

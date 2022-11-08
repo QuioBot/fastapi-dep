@@ -17,6 +17,8 @@ RUN python3 -m venv /opt/venv
 # Install requirments to new virtual environment
 RUN /opt/venv/bin/pip install -r requirements.txt
 
+RUN pip install gdown
+
 RUN python src/bin/download_model
 
 # purge unused
