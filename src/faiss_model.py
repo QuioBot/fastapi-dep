@@ -5,7 +5,7 @@ import pandas as pd
 
 
 
-qa=pd.read_pickle('app/src/models/train_gpt_data.pkl')
+qa=pd.read_pickle('src/models/train_gpt_data.pkl')
 question_bert = qa["Q_FFNN_embeds"].tolist()
 answer_bert = qa["A_FFNN_embeds"].tolist()
 question_bert = np.array(question_bert)
