@@ -17,6 +17,8 @@ RUN python3 -m venv /opt/venv
 # Install requirments to new virtual environment
 RUN /opt/venv/bin/pip install -r requirements.txt
 
+RUN python src/bin/download_model
+
 # purge unused
 RUN apt-get remove -y --purge make gcc build-essential \
     && apt-get autoremove -y \
@@ -25,7 +27,5 @@ RUN apt-get remove -y --purge make gcc build-essential \
 # make entrypoint.sh executable
 RUN chmod +x entrypoint.sh
 
-
-RUN python src/bin/download_model
 
 CMD [ "./entrypoint.sh" ]
