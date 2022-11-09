@@ -1,7 +1,7 @@
-from src.bert_model import biobert_tokenizer,question_extractor_model1
-from src.gpt_model import gpt2_tokenizer, tf_gpt2_model
-from src.prepare_data import preprocess
-from src.faiss_model import preparing_gpt_inference_data
+from src.bert.bert_model import biobert_tokenizer,question_extractor_model1
+from src.gpt.gpt_model import gpt2_tokenizer, tf_gpt2_model
+from src.prepare.prepare_data import preprocess
+from src.faiss.faiss_model import preparing_gpt_inference_data
 import tensorflow as tf
 import numpy as np
 
